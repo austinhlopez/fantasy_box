@@ -1,9 +1,14 @@
+// added lines
+var querystring = require('querystring');
+var http = require('https');
+
+// finish
 const postData = querystring.stringify({
   'msg': 'Hello World!'
 });
 
 const options = {
-  hostname: 'https://www.boxingscene.com/',
+  hostname: 'boxingscene.com',
   port: 80,
   path: '/',
   method: 'get'
